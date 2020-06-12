@@ -13,6 +13,8 @@ gem 'coffee-rails'
 gem 'bootsnap'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'therubyracer'
+gem 'sprockets-rails', '2.3.3'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -40,9 +42,9 @@ group :test, :development do
   gem "better_errors"
   gem "binding_of_caller"
   gem "factory_bot"
-  gem "simplecov"
   gem "database_cleaner"
-gem 'sqlite3', '~> 1.3.6'
+  gem "simplecov"
+gem 'sqlite3', '~> 1.4'
   gem "pry"
   gem "guard-rspec", require: false
   gem "thin"
